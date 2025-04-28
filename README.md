@@ -36,6 +36,7 @@ Clone this repository to your local machine:
 git clone https://github.com/your-username/rag-chatbot.git
 cd rag-chatbot
 ```
+---
 
 ### Step 2: Set Up a Virtual Environment
 Create and activate a virtual environment:
@@ -46,11 +47,15 @@ venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
 ```
+---
+
 ### Step 3: Install Dependencies
 Install the required libraries using pip:
 ```bash
 pip install -r requirements.txt
 ```
+---
+
 
 ### Step 4: Add Your API Key
 Create a .env file in the root directory and add your OpenRouter API key:
@@ -58,17 +63,24 @@ Create a .env file in the root directory and add your OpenRouter API key:
 OPENROUTER_API_KEY=your_actual_api_key_here
 ```
 
+---
+
 ### Step 5: Place the Research Paper
 Place the research paper (PDF) in the root directory of the project and update the pdf_path variable in the code if necessary:
 ```bash
 pdf_path = "Orygin RAG AI Assignment.pdf"
 ```
+
+---
+
 ### How to Run the Chatbot
 Run the chatbot script:
 ```bash
 python rag_chatbot.py
 ```
 Once the script is running, you’ll be prompted to ask questions. Type your query and press Enter to receive an answer. To exit the chatbot, type exit.
+
+---
 
 ## Libraries and Frameworks Used
 The following libraries and frameworks were used in this project:
