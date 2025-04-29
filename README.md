@@ -8,7 +8,7 @@ The workflow consists of three stages:
 2. **Retrieval**: Use embeddings and vector similarity search to retrieve the most relevant chunks based on the user's query.
 3. **Generation**: Pass the retrieved chunks to an LLM to generate a coherent response.
 
-This project was created as part of an AI internship assignment to demonstrate practical knowledge of modern AI systems.
+
 
 ---
 
@@ -24,7 +24,7 @@ This project was created as part of an AI internship assignment to demonstrate p
 To run this project, you need:
 - Python 3.8 or higher
 - Access to an OpenRouter API key (or any other LLM API)
-- A research paper in PDF format (e.g., `Orygin RAG AI Assignment.pdf`)
+- A research paper in PDF format (e.g., `Agentic_RAG.pdf`) has been uploaded.
 
 ---
 
@@ -33,8 +33,8 @@ To run this project, you need:
 ### Step 1: Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/rag-chatbot.git
-cd rag-chatbot
+git clone https://github.com/Vinay12345-neutron/RAG-chatbot.git
+cd RAG-chatbot
 ```
 ---
 
@@ -42,8 +42,8 @@ cd rag-chatbot
 Create and activate a virtual environment:
 ```bash
 python -m venv venv
-# On Windows:
-venv\Scripts\activate
+# On Windows:(bash)
+source venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
 ```
@@ -68,7 +68,7 @@ OPENROUTER_API_KEY=your_actual_api_key_here
 ### Step 5: Place the Research Paper
 Place the research paper (PDF) in the root directory of the project and update the pdf_path variable in the code if necessary:
 ```bash
-pdf_path = "Orygin RAG AI Assignment.pdf"
+pdf_path = "Agentic_RAG.pdf"
 ```
 
 ---
