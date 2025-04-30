@@ -1,6 +1,6 @@
 # 🤖 RAG Chatbot Project
 
-## Overview
+## Overview(Both Version 1 and Version 2 included)
 This project implements a simple yet functional **Retrieval Augmented Generation (RAG)** chatbot. The chatbot answers user queries based on the content of a provided research paper (PDF format). It combines **text retrieval** and **large language models (LLMs)** to generate accurate and contextually relevant responses.
 
 The workflow consists of three stages:
@@ -114,4 +114,36 @@ The following libraries and frameworks were used in this project:
 - Add support for multiple documents or knowledge sources.
 - Improve the retrieval process by experimenting with different embedding models or similarity metrics.
 - Create a web-based GUI for better user interaction.
+
+---
+
+## Version 2 Updates
+The second version of the RAG chatbot introduces several improvements to enhance performance, usability, and maintainability. Below is a summary of the key updates:
+
+- ### Caching Embeddings :
+Added support for caching embeddings to avoid recomputing them every time the script runs. This significantly reduces startup time, especially for large documents.
+Embeddings are stored in a JSON file (embeddings_cache.json) and loaded dynamically when available.
+- ### Improved Text Splitting :
+Enhanced text splitting logic using langchain's RecursiveCharacterTextSplitter to handle complex document structures more effectively.
+- ### Dynamic Chunk Size :
+Introduced configurable chunk size and overlap parameters (CHUNK_SIZE and CHUNK_OVERLAP) for greater flexibility. These can be easily adjusted at the top of the script.
+- ### Error Handling :
+Added robust error handling for API calls, file operations, and other critical processes to ensure the chatbot runs smoothly even in edge cases.
+- ### Answer Formatting :
+Refined the prompt sent to the LLM to generate clearer, more concise, and well-structured answers.
+- ### Logging :
+Integrated logging to track the chatbot’s operations, debug issues, and provide insights into its workflow.
+- ### User Feedback Loop :
+Added a feedback mechanism to allow users to rate the quality of the generated answers. This helps identify areas for improvement and enhances user engagement.
+Support for Multiple Documents (Future-Ready) :
+The code is structured to support multiple PDFs as knowledge sources, making it easier to extend the chatbot’s capabilities in the future.
+- ### Code Modularity :
+Improved code modularity by organizing functions logically and ensuring each component (e.g., ingestion, retrieval, generation) is self-contained and reusable.
+- ### How These Updates Improve the Chatbot
+- Performance : Caching embeddings and optimizing text splitting reduce computation time and improve efficiency.
+- Usability : The feedback loop and better answer formatting make the chatbot more interactive and user-friendly.
+- Maintainability : Modular code and logging make it easier to debug, extend, and maintain the system.
+- Scalability : The design supports future enhancements, such as adding multiple documents or deploying the chatbot to a web interface.
+
+
 
