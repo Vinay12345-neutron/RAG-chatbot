@@ -28,6 +28,13 @@ To run this project, you need:
 
 ---
 
+## Disk Space Requirements
+This project requires approximately **400–800MB** of disk space when cloned and run. This includes:
+- ~200–400MB for Python dependencies.
+- ~1–2MB for the embeddings cache.
+- ~1–5MB for the research paper.
+- ~200–400MB for the virtual environment.
+
 ## Installation and Setup
 
 ### Step 1: Clone the Repository
